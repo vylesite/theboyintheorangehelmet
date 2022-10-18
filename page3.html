@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> the boy in the orange helmet </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    
+
+</head>
+
+
+<body>
+
+    <div class="eye">
+
+        <div class="ball">
+
+            <div class="page-3">
+
+                <div class="box-5">
+                    <div class="text-10">
+                        <a href="there.html">
+                            are you there?
+                        </a>
+                    </div>
+
+                    <div class="text-11">
+                        <a href="whatif.html">
+                            what if...?
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-6">
+
+                    <div class="text-12">
+                        fragmented memories
+                    </div>
+                    
+                    <div class="text-13">
+                        <a href="echo.html">
+                            echoing
+                        </a>
+                    </div>
+
+                    <div class="text-14">
+                        you are here. with us.<br>
+                        in a different way.
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+            <a href="index.html">
+                <div class="arrow">
+                
+                    <i class='fas fa-angle-up'></i>
+                
+                </div>
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $(".text-10").fadeTo(400, 1);
+            $(".text-11").delay(400).fadeTo(800, 1);
+            $(".text-12").delay(800).fadeTo(800, 1);
+            $(".text-13").delay(1200).fadeTo(800, 1);
+            $(".text-14").delay(1600).fadeTo(800, 1);
+ 
+
+
+
+            history.scrollRestoration = "manual"; 
+
+                $(window).on('beforeunload', function(){ 
+                $(window).scrollTop(0); 
+                });
+
+        })
+    </script>
+
+</body>
+
+
+</html>

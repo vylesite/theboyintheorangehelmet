@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> the boy in the orange helmet </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    
+
+</head>
+
+
+<body>
+
+    <div class="eye">
+
+        <div class="ball">
+
+            <div class="page-2">
+
+                <div class="box-3">
+
+                    <div class="text-6">
+                        <a href="comeandgo.html">
+                            come and go
+                        </a>
+                    </div>
+
+                    <div class="text-7">
+                        <a href="storm.html">
+                            fate is like a storm
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-4">
+
+                    <div class="text-8">
+                        my whole world <br> turn up side down
+                    </div>
+
+                    <div class="text-9">
+                        shattering
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <a href="page3.html">
+                <div class="arrow">
+                
+                    <i class='fas fa-angle-up'></i>
+                
+                </div>
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $(".text-6").fadeTo(400, 1);
+            $(".text-7").delay(400).fadeTo(800, 1);
+            $(".text-8").delay(800).fadeTo(800, 1);
+            $(".text-9").delay(1200).fadeTo(800, 1);
+ 
+
+
+
+            history.scrollRestoration = "manual"; 
+
+                $(window).on('beforeunload', function(){ 
+                $(window).scrollTop(0); 
+                });
+
+        })
+    </script>
+
+</body>
+
+
+</html>
